@@ -1,0 +1,2 @@
+[25-Jan-2025 16:18:32 UTC] PHP Parse error:  syntax error, unexpected '$', expecting variable (T_VARIABLE) in C:\wamp64\www\swchallenge\wp-content\plugins\shakewell-list-challenge\shakewell-list-challenge.php on line 97
+[25-Jan-2025 16:20:16 UTC] PHP Parse error:  syntax error, unexpected 'const' (T_CONST) in C:\wamp64\www\swchallenge\wp-content\plugins\shakewell-list-challenge\shakewell-list-challenge.php on line 98

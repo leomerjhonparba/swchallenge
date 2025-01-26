@@ -1,0 +1,24 @@
+#my-list {
+    list-style: none;
+    padding: 0;
+    margin: 1em 0;
+}
+
+#my-list .list-item {
+    margin: 5px 0;
+    padding: 10px;
+    background: #f7f7f7;
+    border: 1px solid #ddd;
+    cursor: move;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#my-list .remove-item {
+    background: none;
+    border: none;
+    color: red;
+    font-weight: bold;
+    cursor: pointer;
+}

@@ -1,0 +1,459 @@
+/**
+* Theme Name: SWChallenge
+* Author: Jhon Parba
+* Version: 1
+*/
+
+body {
+    font-family: "Space Grotesk", serif;
+    background-color: #121212;
+    color: var(--color-white-v2);
+}
+header {
+    padding: 40px 3.75rem;
+}
+
+.site-main {
+    overflow: auto;
+}
+
+.font-medium {
+    font-weight: var(--font-weight-medium);
+}
+.text-white-v2 {
+    color: var(--color-white-v2);
+}
+.text-gray-light {
+    color: var(--color-gray-light);
+}
+.text-gray-medium {
+    color: var(--color-gray-medium);
+}
+.text-xl {
+    font-size: var(--text-xl);
+}
+.text-3xl {
+    font-size: var(--text-3xl);
+    line-height: var(--text-3xl--line-height);
+}
+.text-3v2xl {
+    font-size: var(--text-3v2xl);
+    line-height: var(--text-3v2xl--line-height);
+}
+.text-8v2xl {
+    font-size: var(--text-8v2xl);
+    line-height: var(--text-8v2xl--line-height);
+}
+.text-4v2xl {
+    font-size: var(--text-4v2xl);
+    line-height: var(--text-4v2xl--line-height);
+}
+.text-112 {
+    font-size: var(--text-112);
+    line-height: var(--text-112--line-height);
+}
+.text-base {
+    font-size: var(--text-base);
+    line-height: var(--text-base--line-height);
+}
+.lg\:gap-\[40px\] {
+    @media (width >= 64rem) {
+      gap: 40px;
+    }
+}
+.lg\:gap-\[24\] {
+    @media (width >= 64rem) {
+      gap: 24;
+    }
+}
+.gap-\[24px\] {
+    gap: 24px;
+}
+.mb-40 {
+    margin-bottom: 2.5rem;
+}
+.mb-12 {
+    margin-bottom: 0.75rem;
+}
+.mt-20 {
+    margin-top: 1.5rem;
+}
+.plr-60 {
+    padding-left: 3.75rem;
+    padding-right: 3.75rem;
+}
+.plr-172 {
+    padding-left: 10.75rem;
+    padding-right: 10.75rem;
+}
+.ptb-80 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.ptb-120 {
+    padding-top: 7.5rem;
+    padding-bottom: 7.5rem;
+}
+.md\:pt-120 {
+    @media (width >= 48rem) {
+        padding-top: 7.5rem;
+    }
+  }
+.bg-gray-dark {
+    background-color: var(--color-gray-dark);
+}
+.w-1\/4 {
+    width: calc(1/4 * 100%);
+  }
+
+/* Hero Section */
+
+.hero-container {
+    width: 1100px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.big-text-wrap {
+    position: relative;
+    margin-bottom: 3.5rem;
+}
+.text-combo {
+    padding: 12px 0;
+}
+.text-combo .sm {
+    width: 336px;
+    max-width: 100%;;
+}
+.big-text-wrap .mobile { 
+    display: none;
+}
+.circle {
+    height: 33.438rem;
+    width: 33.438rem;
+    position: absolute;
+    top: 30px;
+}
+.lets-talk-btn {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.lets-talk-btn:before {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/lets-talk-text.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: rotate 3s ease-in-out infinite;
+}
+.lets-talk-btn .arr-btn {
+    width: 6.5rem;
+    height: 6.5rem;
+    background-color: #fff;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Services Section */
+
+.services-section {
+    padding-left: 17.75rem;
+}
+.services-section .service-list-wrap {
+    margin-top: 95px;
+}
+.services-section .heading {
+    margin-bottom: 12px;
+}
+.services-section .service-item {
+    border-bottom: 1px solid var(--color-gray-medium);
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* Video Section */
+
+.video-section .bg-img {
+    height: 38.75rem;
+    width: 100%;
+    margin-bottom: 2.5rem;
+}
+
+/* Recent Projects Section */
+
+.recent-projects-section .heading {
+    width: 600px;
+    max-width: 100%;
+}
+.projects-list-wrap {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-top: 5.938rem;
+}
+.project-item {
+    position: relative;
+}
+.project-item:hover:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, .7);
+}
+.project-item .info {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    padding: 40px;
+    opacity: 0;
+}
+.project-item:hover .info {
+    opacity: 1;
+}
+.arrow-icon {
+    border: 1px solid #F2F2F2;
+    border-radius: 100%;
+    height: 48px;
+    width: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+}
+.project-item .image {
+    height: 40.5rem;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+/* Clients Section */
+
+.client-carousel-wrap {
+    margin-left: 7rem;
+    margin-top: 5.938rem;
+}
+
+.client-item .logo {
+    width: 119px;
+    height: 119px;
+    background-color: #fff;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.swiper-arrow-wrap {
+    display: flex;
+    gap: 24px;
+}
+.swiper-arrow-wrap .arr {
+    height: 40px;
+    width: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+.swiper-arrow-wrap .swiper-right {
+    background-image: url('images/swiper-arr-right.svg');
+}
+.swiper-arrow-wrap .swiper-left {
+    background-image: url('images/swiper-arr-left.svg');
+}
+
+/* Let's Talk Section */
+
+.lets-talk-section .sub-heading {
+    width: 680px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: 7rem;
+}
+.lets-talk-section .form-container {
+    margin-top: 90px;
+}
+.lets-talk-section .frm_primary_label {
+    color: #fff;
+    font-weight: 500;
+    font-size: 18px;
+}
+.lets-talk-section .frm_style_formidable-style.with_frm_style .form-field input:not([type=file]):not([type=range]):not([readonly]):focus,
+.lets-talk-section .frm_style_formidable-style.with_frm_style .frm_blank_field input[type=text],
+.lets-talk-section .frm_style_formidable-style.with_frm_style .frm_blank_field textarea,
+.lets-talk-section .frm_style_formidable-style.with_frm_style .frm_blank_field input[type=email],
+.lets-talk-section .frm_style_formidable-style.with_frm_style .form-field textarea:focus,
+.lets-talk-section .form-container input,
+.lets-talk-section .form-container textarea,
+.lets-talk-section .form-container textarea:focus {
+    background: transparent;
+    border-radius: 0;
+    border: 0;
+    border-bottom: 1px solid #F2F2F2;
+    padding: 15px 32px 15px;
+    color: #F2F2F2;
+    box-shadow: none;
+    font-size: 18px;
+}
+.lets-talk-section .frm_style_formidable-style.with_frm_style .frm_blank_field textarea,
+.lets-talk-section .frm_style_formidable-style.with_frm_style .frm_blank_field input[type=email],
+.lets-talk-section .frm_style_formidable-style.with_frm_style .frm_blank_field input[type=text] {
+    border-color: #F04438;
+}
+.lets-talk-section .frm_style_formidable-style.with_frm_style .frm_submit {
+    justify-content: end;
+}
+.lets-talk-section .frm_style_formidable-style.with_frm_style .frm_submit button {
+    text-transform: uppercase;
+    background: transparent;
+    border-color: #F2F2F2;
+    color: #F2F2F2;
+    box-shadow: none;
+    font-size: 18px;
+    width: 320px;
+    padding: 23.5px;
+    border-radius: 100px;
+}
+.lets-talk-section .frm_style_formidable-style.with_frm_style .frm_submit button:hover {
+    background: #F2F2F2;
+    color: #585858;
+}
+.lets-talk-section .custom-radio .frm_opt_container {
+    display: flex;
+    gap: 16px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+.lets-talk-section .custom-radio .frm_radio label {
+    border: 1px solid #F2F2F2;
+    border-radius: 100px;
+    color: #F2F2F2 !important;
+    padding: 16px 32px;
+}
+
+.lets-talk-section .custom-radio .frm_radio label:has(input[type="radio"]:checked) {
+    background: #F2F2F2;
+    color: #121212 !important;
+}
+.lets-talk-section .custom-radio .frm_radio input {
+    visibility: hidden;
+    position: absolute !important;
+}
+
+.frm_required {
+    display: none !important;
+}
+.lets-talk-section .frm_style_formidable-style.with_frm_style .frm_error, 
+.lets-talk-section .frm_style_formidable-style.with_frm_style .frm_limit_error {
+    color: #F2F2F2 !important;
+}
+
+::placeholder {
+    color: #969696 !important;
+    font-size: 18px !important;
+    opacity: 1; /* Firefox */
+  }
+  
+  ::-ms-input-placeholder { /* Edge 12 -18 */
+    color: #969696 !important;
+    font-size: 18px !important;
+  }
+
+@keyframes rotate {
+    to {
+        transform: rotate(1turn)
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    header {
+        padding: 40px 1.25rem;
+    }
+    .text-8v2xl {
+        font-size: 2.75rem;
+    }
+    .text-3v2xl,
+    .text-4v2xl {
+        font-size: 1.25rem;
+    }
+    .text-112 {
+        font-size: 3.438rem;
+    }
+    .plr-172,
+    .plr-60 {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
+    .ptb-120 {
+        padding-top: 3.75rem;
+        padding-bottom: 3.75rem;
+    }
+    .ptb-80 {
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+    .client-carousel-wrap {
+        margin-left: 0;
+        margin-top: 3.75rem;
+    }
+    .project-item .image {
+        height: 25rem;
+    }
+    .projects-list-wrap {
+        margin-top: 3.125rem;
+    }
+    .services-section .service-list-wrap {
+        margin-top: 60px;
+        margin-left: 5.375rem;
+    }
+    .video-section .bg-img {
+        height: 28.125rem;
+    }
+    .lets-talk-btn {
+        height: 125px;
+        width: 125px;
+    }
+    .lets-talk-btn .arr-btn {
+        width: 60px;
+        height: 60px;
+    }
+    .lets-talk-btn .arr-btn img {
+        width: 32px;
+    }
+    .lets-talk-section .form-container {
+        margin-top: 50px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .services-section .service-item,
+    .projects-list-wrap {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .big-text-wrap .mobile { 
+        display: block;
+    }
+    .text-combo .desktop { 
+        display: none;
+    }
+    .video-section .bg-img {
+        height: 10rem;
+    }
+    .lets-talk-section .custom-radio .frm_opt_container {
+        display: block;
+    }
+}
